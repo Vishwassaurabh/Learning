@@ -1,0 +1,16 @@
+
+/* element selector . */
+p{
+    color: blue;
+}
+
+/* class selector. */
+
+.text{
+    color: green;
+}
+/* id selector. */
+
+#para{
+    color: red;
+}
