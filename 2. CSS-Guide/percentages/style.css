@@ -1,0 +1,10 @@
+.parents{
+    background-color: rgb(199, 6, 6);
+    width: 80%;
+    color: white;
+}
+.child{
+    background-color: yellow;
+    color: black;
+    width: 50%;
+}
