@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS Bootstrap DEMO</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h2>Registration Form</h2>
+      <p class="mb-4">please fill in this form to register for our services.</p>
+
+      <form>
+        <!-- text input field-->
+        <div class="mb-3">
+          <label for="FirstName" class="form-label">First Name</label>
+          <input
+            type="text"
+            id="FirstName"
+            placeholder="Enter your First name"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Enter your last name"
+            required
+            class="form-control"
+          />
+        </div>
+        <!-- email input -->
+        <div class="mb-3">
+          <label for="emailAddress" class="form-label">Email Address</label>
+          <input
+            type="email"
+            id="emailAddress"
+            placeholder="Enter your email"
+            required
+            class="form-control"
+          />
+        </div>
+        <!-- password input -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="text"
+            id="password"
+            placeholder="Enter your password"
+            required
+            class="form-control"
+          />
+        </div>
+
+        <!-- checkbox group -->
+        <div class="mb-3">
+          <div class="form-check">
+            <input type="checkbox" id="checkupdate" class="form-check-input" />
+            <label for="checkupdate" class="form-check-label"
+              >Recevie update about your services</label
+            >
+          </div>
+        </div>
+
+        <!-- radio input -->
+        <fieldset class="mb-3">
+          <legend>Membership Type</legend>
+
+          <div class="form-check" >
+            <input
+              type="radio"
+              id="Membershipstandard"
+              class="form-check-input"
+            />
+            <label for="Membershipstandard" class="form-check-label">standard</label>
+          </div>
+          <div class="mb-3">
+            <input
+              type="radio"
+              id="Membershippermium"
+              class="form-check-input"
+            />
+            <label for="Membershippermium" class="form-check-label">permium</label>
+          </div>
+        </fieldset>
+
+        <!-- file input -->
+         <div class="mb-3">
+            <label for="profilepicture" class="form-label">profile picture</label>
+            <input type="file" id="profilepicture" class="form-control">
+         </div>
+
+         <!-- sumbit button -->
+          <button type="submit" class="btn btn-primary mb-5">Register</button>
+      </form>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
