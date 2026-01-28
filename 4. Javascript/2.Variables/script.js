@@ -1,26 +1,26 @@
-// // keyword (let ,const , var)
-// // variable name (container)
-// // value
+/*// keyword (let ,const , var)
+// variable name (container)
+// value
 
-// // variable declaration and intializations
-// // declaration and initialization in one line:
-// let age = 30;
+// variable declaration and intializations
+// declaration and initialization in one line:
+let age = 30;
 
-// // Declaration first then Assignment :
-// let country;
-// country = "india";
+// Declaration first then Assignment :
+let country;
+country = "india";
 
-// // multiple declarations then assignments :
-// let firstName, lastName;
-// firstName = "vishwas";
-// lastName = "saurabh";
+// multiple declarations then assignments :
+let firstName, lastName;
+firstName = "vishwas";
+lastName = "saurabh";
 
-// // multiple declarations in one line:
-// let age1 = 30,
-//   job = "Developer",
-//   country1 = "india";
-// console.log(age1,job,country1);
-
+// multiple declarations in one line:
+let age1 = 30,
+  job = "Developer",
+  country1 = "india";
+console.log(age1,job,country1);
+*/
 //!  ----primitive data types -------
 //* 1. Numbers
 let age = 28;

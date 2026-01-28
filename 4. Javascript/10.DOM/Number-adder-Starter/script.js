@@ -7,8 +7,9 @@ addbtn.addEventListener("click", function () {
   let num2 = document.getElementById("num2").value;
   let result = document.getElementById("result");
 
-  //perform calc  // convert to number and add
+  //perform calc  // convert to number and add  //this is conert to string by number
   let sum = parseFloat(num1) + parseFloat(num2);
+
 
   // show output (use innerHTML for icon)
   result.innerHTML = "Result <i class='fas fa-equals icon'></i>" + sum;
