@@ -26,7 +26,7 @@ document.getElementById("convertbutton").addEventListener("click", function () {
   if (converttype == "Celsius") {
     convertedtemperature = (temperature - 32) * (5 / 9);
     result.innerHTML = `${temperature}°F is equal to ${convertedtemperature.toFixed(2)}°C`;
-  } else if (converttype == "fahrenheit") {
+  } else if (converttype == "Fahrenheit") {
     convertedtemperature = (temperature * 9) / 5 + 32;
     result.innerHTML = `${temperature}°C is equal to ${convertedtemperature.toFixed(2)}°F`;
   }
