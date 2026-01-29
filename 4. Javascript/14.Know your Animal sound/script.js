@@ -1,34 +1,36 @@
+//slect the button and add event listener
 document.getElementById("soundbutton").addEventListener("click", function () {
+
   //the name of the animal from the input field
   const animal = document.getElementById("animalInput").value.toLowerCase();
 
-  //sound output element
-  const soundoutput = document.getElementById("soundoutput");
+  //sound output result element
+  const output = document.getElementById("soundoutput");
 
   //logic
   switch (animal) {
     case "dog":
-      soundoutput.textContent = "Woof Woof!";
+      output.textContent = "Woof Woof!";
       break;
-      
+
     case "cat":
-      soundoutput.textContent = "Meow Meow!";
+      output.textContent = "Meow Meow!";
       break;
 
     case "sheep":
-      soundoutput.textContent = "Baa Baa!";
+      output.textContent = "Baa Baa!";
       break;
 
     case "cow":
-      soundoutput.textContent = "Moo Moo!";
+      output.textContent = "Moo Moo!";
       break;
 
     case "duck":
-      soundoutput.textContent = "Quack Quack!";
+      output.textContent = "Quack Quack!";
       break;
 
     default:
-      soundoutput.textContent = "Sorry I don't know that Animal Sound!";
+      output.textContent = "Sorry I don't know that Animal Sound!";
       return;
   }
 });
