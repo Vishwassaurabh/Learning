@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #timer{
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CountDown Timer</h1>
+    <p>Enter a time in second and start the countdown!</p>
+    <input type="number" id="timeInput" placeholder="Enter seconds" min="1">
+    <button id="startbtn">Start CountDown</button>
+    <p id="timer">Time Left:0</p>
+    <script src="script.js"></script>
+</body>
+
+</html>
