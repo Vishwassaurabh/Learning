@@ -78,7 +78,7 @@ const user = {
 
 // console.log(user);
 
-//Access nested object properties
+//! Access nested object properties
 const userName = user.name;
 // const userAddress = user.address.street;
 // const CountryName = user.address.country.name;
@@ -100,10 +100,10 @@ const thirduser = students[2];
 // console.log(firstuser);
 
 //! Add new user to studentsObject
-students.unshift({name:'vishwas',age:26,city:'Accra'})
+students.unshift({ name: "vishwas", age: 26, city: "Accra" });
 console.log(students);
 
 //! Modify the arrays of objects
 // update user name from Alice to Cici
-students[0].name='cici';
+students[0].name = "cici";
 console.log(students);
