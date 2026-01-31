@@ -14,17 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const principal = parseFloat(amountInput.value);
     const interest = parseFloat(interestInput.value) / 100 / 12;
     const payments = parseFloat(yearInput.value) * 12;
+
     if (isNaN(principal) || isNaN(interest) || isNaN(payments)) {
       alert("please enter the valid number");
       return;
     }
+
     //calculate monthly payment
     const x = Math.pow(1 + interest, payments);
     const monthly = (principal * x * interest) / (x - 1);
+
     if (isFinite(monthly)) {
       //calc total payment and interest
       const total = monthly * payments;
       const totalInterest = total - principal;
+
       //display the result
       animatevalue(monthlyPayment, 0, monthly, 1000);
       animatevalue(totalPayment, 0, total, 1000);
@@ -42,10 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const current = start + (end - start) * progress;
       elements.textContent = current.toFixed(2);
+
       if (progress < 1) {
         requestAnimationFrame(update);
       }
     }
+
     requestAnimationFrame(update);
   }
 
