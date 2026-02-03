@@ -14,7 +14,7 @@ const progressbar = document.getElementById("progress-bar");
 const result = document.getElementById("result");
 
 //Roadmap step2:add event listener for calculate button
-calculatebtn.addEventListener("click", () => {.
+calculatebtn.addEventListener("click", () => {
 
   //Roadmap step3:validate user input
   const goalAmount = parseFloat(goalamountInput.value);
@@ -46,6 +46,6 @@ calculatebtn.addEventListener("click", () => {.
       result.innerHTML = `🌿 Keep nurturing your saving ! you'll reach your goal in ${months}months.`;
     }
     result.classList.add("show");
-    
+
   }, 100);
 });
