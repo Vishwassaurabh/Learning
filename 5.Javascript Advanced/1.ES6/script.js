@@ -100,7 +100,7 @@ const [first, second, third, fourth] = numbers;
 // console.log(second);
 // console.log(numbers[2]);
 
-//swap variables
+//!swap variables
 let a = 1;
 let b = 2;
 [a, b] = [b, a];
@@ -108,7 +108,7 @@ console.log(a, b);
 
 //object destructuring
 
-//extract user data
+//!extract user data
 // const { name, age, email } = {
 //   name: "vishwas",
 //   age: 30,
@@ -118,7 +118,7 @@ console.log(a, b);
 // console.log(age);
 // console.log(name);
 
-//Destructuring in function parameters
+//!Destructuring in function parameters
 
 function greets({ name, age }) {
   console.log(`Hello, ${name}, your age is ${age}`);
@@ -129,7 +129,7 @@ const myuser = {
 };
 greets(myuser);
 
-//Nested properties
+//!Nested properties
 
 const {
   id,
