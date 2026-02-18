@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline event handlers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(201, 201, 201);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        button {
+            padding: 15px;
+            background-color: red;
+            color: white;
+            margin: 8px 0;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+        }
+
+        div {
+            width: 100%;
+            background-color: #ffe5e5;
+            padding: 32px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid black;
+            font-size: 15px;
+        }
+
+        form {
+            width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 0px 10px 8px rgb(0, 0, 0, 0.1);
+        }
+
+        form button {
+            padding: 15px;
+            background-color: rgb(253, 2, 2);
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mouse event -->.
+    <button onclick="clickHandler()">Click me</button>
+    <button ondblclick="dbClickHandler()">Double Click me</button>
+    <div onmouseover="onMouseOverHandler()" onmouseout="onMouseOutHandler()">Hover over me!</div>
+
+    <!-- keyboard events -->
+    <input onkeydown="onkeydownHandler()" onkeyup="onkeyupHandler()" onkeypress="onkeypressHandler()" type="text"
+        placeholder="enter somethings">
+
+    <!-- form events -->
+    <form onsubmit="onsubmitHandler()">
+        <input onfocus="onfocusHandler()" onblur="onblurHandler()" type="text">
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
