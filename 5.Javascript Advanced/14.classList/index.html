@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            width: 400px;
+            background-color: rgb(255, 254, 253);
+            padding: 20px;
+            margin: auto;
+        }
+
+        #textElement {
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 25px;
+            padding: 8px;
+        }
+
+        button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #45a049;
+        }
+
+        .highlight {
+            background-color: #ffff99;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+        .red-text{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p id="textElement">Modify my class!</p>
+        <button onclick="addclass()">Add class</button>
+        <button onclick="removeclass()">Remove class</button>
+        <button onclick="toggleclass()">Toggle class</button>
+        <button onclick="replaceclass()">Replace class</button>
+        <button onclick="checkContains()">Contains class</button>
+        <button onclick="listitem()">List Item</button>
+        <button onclick="getvalue()">Get Value</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
