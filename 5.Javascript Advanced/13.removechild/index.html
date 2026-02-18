@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits list </title>
+    <style>
+        body {
+            background-color: #f15757;
+            padding: 20px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #fruitList {
+            width: 200px;
+            padding: 20px;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1);
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .fruit {
+            border-bottom: 1px solid black;
+            padding: 15px;
+            text-align: center;
+            background-color: #7feb91;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+
+        .fruit:hover {
+            background-color: #e6eff7;
+            cursor: pointer;
+        }
+
+        #message {
+            background-color: rgb(218, 200, 193);
+            padding: 10px;
+            margin: auto;
+            margin-top: 10px;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="fruitList">
+        <!-- fruits will be inserted here -->
+    </ul>
+    <div id="message"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
