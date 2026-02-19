@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        body {
+            background-color: rgb(221, 206, 221);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #itemList {
+            background-color: white;
+            padding: 0px;
+            list-style: none;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        li {
+            padding: 20px;
+            margin: auto;
+            border-bottom: 2px solid rgb(204, 203, 203);
+        }
+
+        li:hover {
+            cursor: pointer;
+            background-color: #ebe1e1;
+        }
+
+        li:first-child:hover {
+            cursor: pointer;
+            background-color: #ebe1e1;
+            border-radius: 10px 10px 0 0;
+        }
+
+        li:last-child:hover {
+            cursor: pointer;
+            background-color: #ebe1e1;
+            border-radius: 0 0 10px 10px;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="itemList">
+        <li data-item="1">Iteam 1</li>
+        <li data-item="2">Iteam 2</li>
+        <li data-item="3">Iteam 3</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+
+</html>

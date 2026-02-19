@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event flow example</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            display: grid;
+            place-items: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        #parentDiv {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.1);
+        }
+
+        #list {
+            border: 1px solid olive;
+            padding: 10px;
+            list-style: none;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        li {
+            background-color: rgba(163, 154, 76, 0.87);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: rgb(155, 142, 23);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parentDiv">
+        <ul id="list">
+            <li id="item1">Item 1</li>
+            <li id="item2">Item 2</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
