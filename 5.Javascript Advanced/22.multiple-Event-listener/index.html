@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple event listener</title>
+    <style>
+        body {
+            background-color: rgb(233, 231, 228);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #actionbutton {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgb(245, 222, 179);
+            border: none;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            transition: 0.4s;
+        }
+         #actionbutton:hover{
+            background-color: rgb(197, 182, 155);
+            cursor: pointer;
+            transform: scale(1.1);
+         }
+          #actionbutton:active{
+            transform: scale(1);
+         }
+    </style>
+</head>
+
+<body>
+    <button id="actionbutton">Click Me!</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
