@@ -18,6 +18,7 @@ const toggleBtn = document.querySelectorAll(".toggle-btn");
 
 //step 3: define the api key for accessing the exchangeRate-api
 //-set the apikey variable to your exchangeRates-API key
+
 const apikey = "477e6439fd193b3e65623789";
 
 //step 4: set up event listener for toggling between conversion and exchange modes
@@ -26,6 +27,7 @@ toggleBtn.forEach((btn) => {
   //step 4a:add click event listener to toggle buttons to swithch between modes
 
   //step 4b: update the ui to reflect the selected mode (conversion or exchange)
+
   btn.addEventListener("click", () => {
     toggleBtn.forEach((btn) => btn.classList.remove("active"));
     btn.classList.add("active");
@@ -42,14 +44,17 @@ toggleBtn.forEach((btn) => {
 });
 
 //step 5: implement the currency conversion functionality
+
 convertBtn.addEventListener("click", () => {
   //  -step 5a : add a click event listener to the convert button
   //  -step 5b: get the amount  form-currency  and to-currency values form the user
+
   const amount = amountInput.value;
   const from = fromCurrency.value;
   const to = tocurrency.value;
 
   // -step 5c:fetch the conversion rate from the api using the selected currencies
+
   fetch(`https://v6.exchangerate-api.com/v6/${apikey}/pair/${from}/${to}`)
     .then((response) => {
       return response.json();
@@ -62,24 +67,30 @@ convertBtn.addEventListener("click", () => {
     })
     .catch((error) => {
       console.log(error);
+
       // step 5e: handle any error that occur during the ap request and provide feedback to the user
     });
 });
 
 //step 6: Implement the exchange rates retrival functionality
 //-step 6a: add click event listener to the get rates button
+
 getratesBtn.addEventListener("click", () => {
   // step 6b: get the base currency form the user
   const base = basecurrency.value;
+
   //step6c: fetch the exchange rates form api based on the selected based currency
+
   fetch(`https://v6.exchangerate-api.com/v6/${apikey}/latest/${base}`)
     .then((response) => {
       return response.json();
+
       //step 6d:display the fetched exchange rates in a list formate within the exchange
     })
     .then((data) => {
       let ratesHtml = "<h3>exchange Rates</h3><ul>";
-    for (const [currency, rate] of Object.entries(data.conversion_rates)) {
+
+      for (const [currency, rate] of Object.entries(data.conversion_rates)) {
         if (currency !== base) {
           ratesHtml += `   <li>
                 <span class="currency-icon">${currency}</span>
