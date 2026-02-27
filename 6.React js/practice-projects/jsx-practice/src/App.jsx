@@ -3,8 +3,8 @@ import ProfileCard from "./Components/ProfileCard";
 function App() {
   return (
     <div>
-     
-      <ProfileCard/>
+      <ProfileCard />
+      <ProfileCard />
     </div>
   );
 }
