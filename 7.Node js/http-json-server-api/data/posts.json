@@ -1,0 +1,40 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "titel": "Geeting started with Node.js",
+            "author": "john Deo",
+            "Content": "Node.js is a javascript runtime built on chrome's v8 javascripts engine",
+            "data": "2023-04-10",
+            "tags": [
+                "nodejs",
+                "javascripts",
+                "tutorials"
+            ]
+        },
+        {
+            "id": 2,
+            "titel": "Geeting started with Express.js",
+            "author": "smith Deo",
+            "Content": "Node.js is a javascript runtime built on chrome's v8 javascripts engine",
+            "data": "2023-04-10",
+            "tags": [
+                "nodejs",
+                "javascripts",
+                "express.js"
+            ]
+        },
+        {
+            "id": 3,
+            "titel": "React started with Node.js",
+            "author": "Akash Deo",
+            "Content": "React is a javascript runtime built on chrome's v8 javascripts engine",
+            "data": "2023-04-10",
+            "tags": [
+                "reactjs",
+                "javascripts",
+                "tutorials"
+            ]
+        }
+    ]
+}

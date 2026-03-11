@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Deo",
+            "email": "john@example.com",
+            "age": 28,
+            "role": "developer"
+        },
+        {
+            "id": 2,
+            "name": "sumith Deo",
+            "email": "sumith@example.com",
+            "age": 20,
+            "role": "developer bakend"
+        },
+        {
+            "id": 3,
+            "name": "akash Deo",
+            "email": "aksh@example.com",
+            "age": 36,
+            "role": "designer"
+        }
+    ]
+}
