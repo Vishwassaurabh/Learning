@@ -2,7 +2,7 @@ const http = require("http");
 //create a server
 const server = http.createServer((req, res) => {
   //set the content to plain
- res.setHeader("Content-Type", "application/json");
+  res.setHeader("Content-Type", "application/json");
   if (req.url === "/" && req.method === "GET") {
     res.statusCode = 200;
     res.end(JSON.stringify({ message: "Welcome to API!" }));
