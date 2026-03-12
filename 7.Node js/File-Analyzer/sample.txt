@@ -1,7 +1,202 @@
-Node.js is a powerful runtime environment that allows developers to run JavaScript outside the browser. It is widely used for building server-side applications, APIs, and command line tools.
+# Text File Analyzer (Node.js)
 
-Learning Node.js helps developers understand how servers work and how data flows between clients and servers. Many modern applications rely on Node.js because it is fast, scalable, and uses an event-driven architecture.
+## Overview
 
-Programming requires patience and practice. Writing small projects like file analyzers, calculators, and simple web servers helps beginners understand programming concepts better.
+The **Text File Analyzer** is a simple Node.js command-line tool that analyzes a `.txt` file and displays statistics about its content.
+It can calculate the number of characters, words, lines, and file size.
+It also supports a **detailed mode** that shows extra information like paragraphs, average word length, and most common words.
 
-Technology is constantly evolving, and developers must keep learning new tools and frameworks. With dedication and curiosity, anyone can become a skilled programmer.
+---
+
+# Features
+
+* Count **characters**
+* Count **words**
+* Count **lines**
+* Display **file size**
+* Detailed statistics mode
+* Command line interface
+
+---
+
+# Requirements
+
+* Node.js installed
+* A `.txt` file to analyze
+
+---
+
+# Installation
+
+1. Create a project folder.
+2. Save the script as:
+
+```
+count.js
+```
+
+3. Open terminal inside the project folder.
+
+---
+
+# Usage
+
+Basic usage:
+
+```
+node count.js <file.txt>
+```
+
+Example:
+
+```
+node count.js sample.txt
+```
+
+Detailed statistics:
+
+```
+node count.js sample.txt --detail
+```
+
+or
+
+```
+node count.js sample.txt -d
+```
+
+Show help message:
+
+```
+node count.js --help
+```
+
+---
+
+# Command Line Options
+
+| Option         | Description                        |
+| -------------- | ---------------------------------- |
+| -h , --help    | Show help message                  |
+| -d , --detail  | Show detailed statistics           |
+| -s , --summary | Show summary (not implemented yet) |
+
+---
+
+# Output Example
+
+```
+=== Text file statistics ===
+
+file: sample.txt
+size: 765.00 Bytes
+characters: 765
+words: 105
+lines: 7
+
+=== End of statistics ===
+```
+
+Detailed mode example:
+
+```
+=== Detailed statistics ===
+
+non-whitespace characters: 650
+paragraph: 3
+Average word length: 4.35 characters
+
+Most common words:
+"node": 5 occurrences
+"javascript": 4 occurrences
+```
+
+---
+
+# How the Program Works
+
+## 1. Read Command Line Arguments
+
+The program reads user input from the terminal using:
+
+```
+process.argv
+```
+
+---
+
+## 2. Validate File
+
+The script checks:
+
+* File extension must be `.txt`
+* File must exist
+
+```
+fs.existsSync(filepath)
+```
+
+---
+
+## 3. Read File
+
+The file is loaded into memory using:
+
+```
+fs.readFileSync(filepath)
+```
+
+It returns a **buffer** containing the file data.
+
+---
+
+## 4. Analyze Text
+
+The program converts the buffer into a string and calculates:
+
+* Characters
+* Words
+* Lines
+* File size
+
+Regex is used to split text into words and lines.
+
+---
+
+## 5. Detailed Analysis
+
+When the `--detail` option is used, the program also calculates:
+
+* Non-whitespace characters
+* Paragraph count
+* Average word length
+* Most common words
+
+---
+
+# File Structure
+
+```
+project
+│
+├─ count.js
+├─ sample.txt
+```
+
+---
+
+# Possible Improvements
+
+Future improvements could include:
+
+* Implement **summary mode**
+* Support more file types
+* Export results to **JSON or CSV**
+* Add **colored CLI output**
+* Convert to an **NPM CLI package**
+
+---
+
+# Author
+
+Node.js CLI practice project.

@@ -134,7 +134,7 @@ function displaystatistics(stats) {
       console.log(`"${word}":${count} occurences`);
     });
   }
-  console.log("\n===end of statistics ===");
+  console.log("\n===End of statistics ===");
 }
 //Main execution
 const buffer = readfile(filepath);
